@@ -20,7 +20,7 @@
         <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
     </section>
 
-    <section class="form">
+    <div class="form">
         <p class="purple-box text-white text-center border-rounded drop-shadow">
             <span class="text-weight-700">
               Try it free 7 days
@@ -30,51 +30,51 @@
             </span>
         </p>
 
-        <fieldset class="form-section border-rounded drop-shadow">
+        <div class="form-section border-rounded drop-shadow">
             <form>
 
                 <div class="field-container">
-                    <input class="display-block form-field" placeholder="First Name" type="text" name="first-name" id="first-name">
+                    <input class="display-block form-field" placeholder="First Name" type="text" name="first-name" id="first-name" aria-label="First Name">
                     <div class="first-name-error-occurred">
-                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <img class="form-error-icon" alt="error icon" src="images/icon-error.svg" />
                         <p class="form-error-message">First name cannot be empty</p>
                     </div>
                 </div>
 
                 <div class="field-container">
-                    <input class="display-block form-field" placeholder="Last Name" type="text" name="last-name" id="last-name">
+                    <input class="display-block form-field" placeholder="Last Name" type="text" name="last-name" id="last-name" aria-label="Last Name">
                     <div class="last-name-error-occurred">
-                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <img class="form-error-icon" alt="error icon" src="images/icon-error.svg" />
                         <p class="form-error-message">Last name cannot be empty</p>
                     </div>
                 </div>
 
                 <div class="field-container">
-                    <input class="display-block form-field" placeholder="Email" type="email" name="" id="email">
+                    <input class="display-block form-field" placeholder="Email" type="email" name="email" id="email" aria-label="email">
                     <div class="email-error-occurred">
-                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <img class="form-error-icon" alt="error icon" src="images/icon-error.svg" />
                         <p class="form-error-message">Looks like this is not an email</p>
                     </div>
                 </div>
 
                 <div class="field-container">
-                    <input class="display-block form-field" placeholder="Password" type="password" name="password" id="password">
+                    <input class="display-block form-field" placeholder="Password" type="password" name="password" id="password" aria-label="password">
                     <div class="password-error-occurred">
-                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <img class="form-error-icon" alt="error icon" src="images/icon-error.svg" />
                         <p class="form-error-message">Password cannot be empty</p>
                     </div>
                 </div>
 
             </form>
 
-            <button type="submit" id="submit-button" class="text-white text-uppercase form-button border-rounded-50">Claim your free trial</button>
+            <input type="submit" id="submit-button" class="text-white text-uppercase form-button border-rounded-50">Claim your free trial</input>
 
             <p class="form-disclaimer text-center text-smaller text-weight-500">By clicking the button, you are agreeing to our
                 <a class="text-weight-700">Terms and Services</a>
             </p>
 
-        </fieldset>
-    </section>
+        </div>
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>
