@@ -34,7 +34,9 @@ body {
 .form-section {
     background-color: #fff;
     border: 0px;
-    padding: 2rem;
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .form-field {
@@ -48,6 +50,10 @@ body {
     border-radius: 0.25rem;
     border: 1px solid lightgrey;
     position: relative;
+}
+
+.form-field:focus {
+    border-color: hsl(248, 32%, 49%);
 }
 
 .field-container {
@@ -157,7 +163,7 @@ body {
 }
 
 .drop-shadow {
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 6px 1px 0px #ce5054;
 }
 
 .display-block {
@@ -191,5 +197,8 @@ body {
     .form {
         width: 50%;
         padding: 1rem;
+    }
+    .form-section {
+        padding: 2rem;
     }
 }
