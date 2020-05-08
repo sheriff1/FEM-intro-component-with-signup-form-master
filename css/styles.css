@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+/*
+* HERO STYLING
+*/
+
+
+/*
+* PURPLE BOX STYLING
+*/
+
+.purple-box {
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem;
+}
+
+
+/*
+* FORM & FIELDSET STYLING
+*/
+
+.form-section {
+    background-color: #fff;
+    border: 0px;
+    padding: 1rem;
+}
+
+.form-field {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    border: 1px solid lightgrey;
+}
+
+.form-button {
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+    font-family: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    margin: 0.5rem 0;
+}
+
+.form-disclaimer {
+    color: hsl(246, 25%, 77%);
+}
+
+.form-disclaimer a {
+    color: hsl(0, 100%, 74%);
+}
+
+
+/*
+* UTILITY CLASSES
+*/
+
+.border-rounded {
+    border-radius: 1rem;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.drop-shadow {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-block {
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    background: url(/images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+}
