@@ -30,23 +30,53 @@
             </span>
         </p>
 
-        <fieldset class="form-section border-rounded">
+        <fieldset class="form-section border-rounded drop-shadow">
             <form>
-                <input class="display-block form-field" placeholder="First Name" type="text" name="first-name" id="first-name">
 
-                <input class="display-block form-field" placeholder="Last Name" type="text" name="last-name" id="last-name">
+                <div class="field-container">
+                    <input class="display-block form-field" placeholder="First Name" type="text" name="first-name" id="first-name">
+                    <div class="first-name-error-occurred">
+                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <p class="form-error-message">First name cannot be empty</p>
+                    </div>
+                </div>
 
-                <input class="display-block form-field" placeholder="Email" type="email" name="" id="email">
+                <div class="field-container">
+                    <input class="display-block form-field" placeholder="Last Name" type="text" name="last-name" id="last-name">
+                    <div class="last-name-error-occurred">
+                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <p class="form-error-message">Last name cannot be empty</p>
+                    </div>
+                </div>
 
-                <input class="display-block form-field" placeholder="Password" type="password" name="password" id="password">
+                <div class="field-container">
+                    <input class="display-block form-field" placeholder="Email" type="email" name="" id="email">
+                    <div class="email-error-occurred">
+                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <p class="form-error-message">Looks like this is not an email</p>
+                    </div>
+                </div>
+
+                <div class="field-container">
+                    <input class="display-block form-field" placeholder="Password" type="password" name="password" id="password">
+                    <div class="password-error-occurred">
+                        <img class="form-error-icon" src="images/icon-error.svg" />
+                        <p class="form-error-message">Password cannot be empty</p>
+                    </div>
+                </div>
+
             </form>
-            <button class="text-white text-uppercase form-button border-rounded-50">Claim your free trial</button>
+
+            <button type="submit" id="submit-button" class="text-white text-uppercase form-button border-rounded-50">Claim your free trial</button>
+
             <p class="form-disclaimer text-center text-smaller text-weight-500">By clicking the button, you are agreeing to our
                 <a class="text-weight-700">Terms and Services</a>
             </p>
+
         </fieldset>
     </section>
 
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
