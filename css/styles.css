@@ -12,6 +12,10 @@ body {
 * HERO STYLING
 */
 
+.hero {
+    margin: 2rem;
+}
+
 
 /*
 * PURPLE BOX STYLING
@@ -19,7 +23,7 @@ body {
 
 .purple-box {
     background-color: hsl(248, 32%, 49%);
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 
 
@@ -30,27 +34,32 @@ body {
 .form-section {
     background-color: #fff;
     border: 0px;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .form-field {
     width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
     font-family: inherit;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     border: 1px solid lightgrey;
 }
 
 .form-button {
     background-color: hsl(154, 59%, 51%);
-    font-weight: 600;
+    font-weight: 500;
     font-family: inherit;
+    font-size: 1rem;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 0;
     margin: 0.5rem 0;
+    letter-spacing: 2px;
+    box-shadow: 0 3px 0px 0px green;
 }
 
 .form-disclaimer {
@@ -67,15 +76,19 @@ body {
 */
 
 .border-rounded {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+}
+
+.border-rounded-50 {
+    border-radius: 0.25rem;
 }
 
 .text-white {
     color: #fff;
 }
 
-.drop-shadow {
-    box-shadow: 0 8px 6px -6px black;
+.text-smaller {
+    font-size: 0.75rem;
 }
 
 .text-uppercase {
@@ -84,6 +97,26 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.text-weight-400 {
+    font-weight: 400;
+}
+
+.text-weight-500 {
+    font-weight: 500;
+}
+
+.text-weight-600 {
+    font-weight: 600;
+}
+
+.text-weight-700 {
+    font-weight: 700;
+}
+
+.drop-shadow {
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .display-block {
@@ -96,4 +129,26 @@ body {
     width: 90%;
     margin: 0 auto;
     background: url(/images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        background: url(/images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+        align-items: center;
+        height: 100vh;
+    }
+    .hero {
+        text-align: left;
+        width: 50%;
+        padding: 1rem;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .form {
+        width: 50%;
+        padding: 1rem;
+    }
 }
